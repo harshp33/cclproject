@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title> Poll App </title>
+	<style>
+		*{font-size:40px;font-family:PanRoman;}
+		.nav{background-color:black;}
+		.nav a {color:blue;text-decoration:none;padding:40px;}
+
+
+	</style>
+
+</head>
+<body>
+<center>
+	<div class="nav">
+		<a href="{% url 'home' %}">Home</a>
+		<a href="{% url 'create' %}">Create</a>
+
+	</div>
+{% block content %} 
+
+
+{% endblock %}
+
+
+</center>
+</body>
+
+
+
+</html>

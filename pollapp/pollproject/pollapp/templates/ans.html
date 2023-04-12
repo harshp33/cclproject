@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> write your answer</h1>
+<h2>{{data.questions}}</h2>
+
+
+<form method="POST">
+	{% csrf_token %}
+	<table>
+		{{fm3.as_table}}
+		
+	</table>
+		<input type="Submit" value="Save">
+
+</form>
+
+	{{msg}}
+{% endblock %}
+
+
+
+
+
+

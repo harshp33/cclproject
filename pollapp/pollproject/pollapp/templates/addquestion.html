@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Create new question</h1>
+<form method="POST">
+	{% csrf_token %}
+	<table>
+		{{fm2.as_table}}
+		
+	</table>
+		<input type="Submit" value="Save">
+
+</form>
+	{{msg}}
+{% endblock %}
+

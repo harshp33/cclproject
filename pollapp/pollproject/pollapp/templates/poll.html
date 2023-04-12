@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Available Poll</h1>
+
+
+{% for d in data %}
+	
+	<h2> {{ d.question }} </h2>
+	<button> <a href="{% url 'view' d.id %}">Vote</a></button>
+	<button> <a href="{% url 'result' d.id %}">View Results</a></button>
+
+
+{% endfor %}
+
+{% endblock %}
+
