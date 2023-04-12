@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> Questions</h1>
+
+
+{% for d in data %}
+	
+	<h2> {{ d.questions }} </h2>
+	<button> <a href="{% url 'ans'  %}">Answer</a></button>
+	<button> <a href="{% url 'viewans' %}">View Answer</a></button>
+
+	
+	
+
+{% endfor %}
+
+{% endblock %}
+

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1> what do you want to create</h1>
+
+	<button> <a href="{% url 'addpoll' %}"> Poll</a></button>
+	<button><a href="{% url 'addquestion' %}"> Question Answer</a></button>
+		
+{% endblock %}
+

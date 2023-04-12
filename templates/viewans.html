@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h1> Answer</h1>
+
+{% for d in data %}
+
+<h3> {{ d.answer }} </h3>
+
+
+    {% endfor %}
+
+{%  endblock %}
